@@ -26,6 +26,6 @@ for year in tqdm(range(1990, 2024), desc='Year'):
                 break
 
 # Write all data to file
-with open("./data/us-house/real-data/clerk_data.tsv", "w+") as f:
+with open("./data/us-house/real-data/clerk_data.tsv.gz", "w+") as f:
     for df in dataframes:
-        df.to_csv(f, sep="\t", index=None, header=None)
+        df.to_csv(f, sep="\t", index=None, header=None,compression="gzip")
