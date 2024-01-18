@@ -160,3 +160,6 @@ cython_debug/
 #.idea/
 
 data/us-house/real-data/clerk_data.tsv
+.DS_Store
+.Rhistory
+.RData
