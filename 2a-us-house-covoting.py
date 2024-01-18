@@ -28,7 +28,7 @@ def incidence_matrix(df):
     incidence_matrix = csr_matrix(incidence_matrix_df.values)
     return incidence_matrix, incidence_matrix_df.index
 
-df = pd.read_csv(path+'clerk_data.tsv', sep='\t', header= None,names=["person", "person_", "party", "state", "state_short", "vote","year","bill"])
+df = pd.read_csv(path+'clerk_data.tsv.gz', sep='\t', header= None,names=["person", "person_", "party", "state", "state_short", "vote","year","bill"], compression='gzip')
 df = df.dropna()
 df = df.drop(columns=['person_'])
 df['vote'] = df['vote'].replace(['Aye', 'Yea'], 'yes')
