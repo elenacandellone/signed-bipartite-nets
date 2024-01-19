@@ -84,8 +84,7 @@ run_spinglass([A], dataset='meneame', synth=False, scenarios=['real-data'],gamma
 run_sponge([A],dataset='meneame', synth=False, scenarios=['real-data'] )
 run_sbm([A], dataset='meneame', synth=False, scenarios=['real-data'] )
 
-
-
+'''
 # COMMUNITY DETECTION - HOUSE OF REPRESENTATIVES - SYNTHETIC NETWORKS
 for y in np.arange(1990,2023):
     path_adj = f'./data/us-house/synth/uniform/{y}/adj/'
@@ -95,6 +94,7 @@ for y in np.arange(1990,2023):
     run_sponge(mats, dataset='us-house', synth=True, scenarios=scenarios, years=[f'{y}']*len(scenarios))
     run_sbm(mats, dataset='us-house', synth=True, scenarios=scenarios,  years=[f'{y}']*len(scenarios))
 
+'''
 # COMMUNITY DETECTION - HOUSE OF REPRESENTATIVES - REAL DATA
 path_adj = f'./data/us-house/real-data/adj/'
 mats = [pickle.load(open(path_adj + f'{year}.pkl', 'rb')) for year in np.arange(1990,2023)]
