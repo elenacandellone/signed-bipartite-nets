@@ -19,11 +19,6 @@ Clone this repository with the command
  git clone https://github.com/elenacandellone/signed-bipartite-nets.git
 ```
 
-## Presentations
-- ODISSEI Conference 2023  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10060900.svg)](https://doi.org/10.5281/zenodo.10060900)
-- Young Complexity Researchers Utrecht
-
-
 ## Scripts
 * `1-us-house-scrape-data.py` scrapes data from the website of the [US House of Representatives Clerk](https://clerk.house.gov/) and saves the votes in the *data* folder. 
 * `2a-us-house-covoting.py` creates the co-voting network for the US House of Representatives data.
@@ -32,7 +27,13 @@ Clone this repository with the command
 * `4-community-detection.py` performs the community detection using several methods on both real and synthetic networks.
 * `5-analysis.ipynb` results of the clustering evaluation.
 
-<!-- CONTACT -->
+## Presentations
+- ODISSEI Conference 2023  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10060900.svg)](https://doi.org/10.5281/zenodo.10060900)
+- Young Complexity Researchers Utrecht [[link](https://www.uu.nl/en/events/young-complexity-researchers-lunch-ycrl-13-community-detection-on-signed-networks-untangling-co)]
+
+## How to cite
+E. Candellone, J. Garcia Bernardo, E. van Kesteren, Community detection on signed bipartite networks, 2024.
+
 
 ## Contact
 - Elena Candellone [e.candellone@uu.nl](mailto:e.candellone@uu.nl)
