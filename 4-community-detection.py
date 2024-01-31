@@ -87,7 +87,7 @@ run_sbm([A], dataset='meneame', synth=False, scenarios=['real-data'] )
 
 # COMMUNITY DETECTION - HOUSE OF REPRESENTATIVES - SYNTHETIC NETWORKS
 for y in np.arange(1990,2023):
-    path_adj = f'./data/us-house/synth/uniform/{y}/adj/'
+    path_adj = f'./data/us-house/synth/{y}/uniform/adj/'
     mats = load_matrices(path_adj)
     
     run_spinglass(mats, dataset='us-house', synth=True, scenarios=scenarios, years=[f'{y}']*len(scenarios))
