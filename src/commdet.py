@@ -69,24 +69,39 @@ def sponge(mat, _run_, n_clusters, path):
         c = Cluster((A.multiply(A>0), -A.multiply(A<0)))
         save_pickle(path, filename, c.SPONGE_sym(k=n_clusters, eigens=n_clusters, mi=1e20))
 
-def sbm(mat, path, weighted=True, degree_corrected=False):
+def sbm(mat, path, weighted=True, degree_corrected=False, k = 0):
 
     """Apply Stochastic Block Model community detection algorithm."""
 
     if not degree_corrected:
         filename = f'sbm_not_deg_corr.pkl'
+        if k > 0:
+            filename = f'sbm_not_deg_corr_{k}.pkl'
     else:
         filename = f'sbm_deg_corr.pkl'
+        if k > 0:
+            filename = f'sbm_deg_corr_{k}.pkl'
     print(path+filename)
     if not os.path.exists(path + filename):
         graph_build = SignedNetwork()
         g = graph_build.graph_construction(repre=mat, repre_type='adj', is_directed=check_if_directed(mat))
         if weighted:
-            state = minimize_blockmodel_dl(g, state_args=dict(recs=[g.ep.absweight_ln, g.ep.sign],
+            if k > 0:
+                x = BlockState(g, B=k, deg_corr=degree_corrected)
+                state = minimize_blockmodel_dl(g, state_args=dict(recs=[g.ep.absweight_ln, g.ep.sign],
+                                                            rec_types=["real-normal", "discrete-binomial"],
+                                                            deg_corr=degree_corrected, B = k))
+            else:
+                state = minimize_blockmodel_dl(g, state_args=dict(recs=[g.ep.absweight_ln, g.ep.sign],
                                                             rec_types=["real-normal", "discrete-binomial"],
                                                             deg_corr=degree_corrected))
         else:
-            state = minimize_blockmodel_dl(g, state_args=dict(recs=[g.ep.sign],
+            if k > 0:
+                state = minimize_blockmodel_dl(g, state_args=dict(recs=[g.ep.sign],
+                                                            rec_types=["discrete-binomial"],
+                                                            deg_corr=degree_corrected, B = k))
+            else:
+                state = minimize_blockmodel_dl(g, state_args=dict(recs=[g.ep.sign],
                                                             rec_types=["discrete-binomial"],
                                                             deg_corr=degree_corrected))
         for i in tqdm(range(100)):
