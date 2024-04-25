@@ -1,5 +1,5 @@
 
-# Untangling co-voting patterns on online social media
+# Untangling co-voting patterns of sparse and dense human interactions
 Repository for the paper "Community detection on signed bipartite networks".
 ***
 
