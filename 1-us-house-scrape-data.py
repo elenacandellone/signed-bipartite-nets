@@ -2,9 +2,8 @@ import pandas as pd
 import requests
 from tqdm import tqdm
 
-# Create a session object
+# DATA SCRAPING - US HOUSE OF REPRESENTATIVES
 s = requests.Session()
-
 dataframes = []
 
 for year in tqdm(range(1990, 2024), desc='Year'):
@@ -18,6 +17,7 @@ for year in tqdm(range(1990, 2024), desc='Year'):
             table["year"] = year
             table["bill"] = bill
             dataframes.append(table)
+        
         except Exception as e:
             print(f"Error at year {year}, bill {bill}. Url {url}")
             print(e)

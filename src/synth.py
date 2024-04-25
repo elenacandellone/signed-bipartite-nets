@@ -169,8 +169,6 @@ def thresholds_scenarios(amplitude, sigma, v_pos, v_neg):
         dist_stories = scenario[1]
         x0 = x0s[i] 
         t_plus, t_minus = find_threshold(A = amplitude, B = amplitude, mu_1 = - dist_stories, mu_2 = + dist_stories, mu_3 = - dist_users, mu_4 = + dist_users, sigma_1 = sigma, sigma_2 = sigma, sigma_3 = sigma, sigma_4 = sigma, v_plus = v_pos, v_minus = v_neg, x0_plus = abs(dist_stories-dist_users), x0_minus = -abs(dist_stories+dist_users) )
-        print(f't_+ = {t_plus}')
-        print(f't_- = {t_minus}\n')
         t_p[tuple(scenario)] = t_plus
         t_m[tuple(scenario)] = t_minus
 
