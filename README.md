@@ -1,11 +1,13 @@
 
-# Untangling co-voting patterns of sparse and dense human interactions
-Repository for the paper "Community detection on signed bipartite networks".
+# Community detection on bipartite signed networks
+Repository for the paper "Community detection in bipartite signed networks is highly dependent on parameter choice".
 ***
 
 ## Paper abstract
 
-Decision-making processes often involve voting. Human interactions with exogenous entities such as legislations or products, can be effectively modeled as two-mode (bipartite) signed networks. These networks exhibit both positive and negative connections between two types of nodes—humans and entities. While detecting communities is an established practice separately for bipartite and signed networks, it remains largely unexplored in the case of bipartite signed networks. In this paper, we systematically evaluate the efficacy of community detection methods on bipartite signed networks using a synthetic benchmark and real-world datasets. Our findings reveal that when no communities are present in the data, these methods often recover spurious communities, and their performance is susceptible to parameter choices. When communities are present, the algorithms exhibit promising performance. This indicates that researchers using community detection methods in the context of bipartite signed networks should not take the communities found at face value.
+Decision-making processes often involve voting. Human interactions with exogenous entities such as legislations or products can be effectively modeled as two-mode (bipartite) signed networks---where people can either vote positively, negatively, or abstain from voting on the entities.
+Detecting communities in such networks could help us understand underlying properties: for example ideological camps or consumer preferences.
+While community detection is an established practice separately for bipartite and signed networks, it remains largely unexplored in the case of bipartite signed networks. In this paper, we systematically evaluate the efficacy of community detection methods on bipartite signed networks using a synthetic benchmark and real-world datasets. Our findings reveal that when no communities are present in the data, these methods often recover spurious communities. When communities are present, the algorithms exhibit promising performance, although their performance is highly susceptible to parameter choice. This indicates that researchers using community detection methods in the context of bipartite signed networks should not take the communities found at face value: it is essential to assess the robustness of parameter choices or perform domain-specific external validation.
 
 ## Synthetic Networks Benchmark
 
@@ -35,7 +37,7 @@ pip install -r requirements.txt
 - Young Complexity Researchers Utrecht [[link](https://www.uu.nl/en/events/young-complexity-researchers-lunch-ycrl-13-community-detection-on-signed-networks-untangling-co)]
 
 ## How to cite
-E. Candellone, J. Garcia Bernardo, E. van Kesteren, Community detection on signed bipartite networks, 2024.
+E. Candellone, E. van Kesteren, S.Chelmi, J. Garcia Bernardo. Community detection in bipartite signed networks is highly dependent on parameter choice, 2024.
 
 
 ## Contact
