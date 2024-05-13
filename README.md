@@ -11,7 +11,7 @@ While community detection is an established practice separately for bipartite an
 
 ## Synthetic Networks Benchmark
 
-<img src="./data/benchmark.png" width="80%" />
+<img src="./data/fig.png" width="80%" />
 
 ## Repository installation
 Clone this repository with the command
