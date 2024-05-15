@@ -1,6 +1,6 @@
 
 # Community detection on bipartite signed networks
-Repository for the paper "Community detection in bipartite signed networks is highly dependent on parameter choice".
+Repository for the paper "Community detection in bipartite signed networks is highly dependent on parameter choice". [https://arxiv.org/2405.08203](https://arxiv.org/2405.08203)
 ***
 
 ## Paper abstract
