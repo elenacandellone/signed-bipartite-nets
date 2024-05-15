@@ -45,7 +45,8 @@ E. Candellone, E. van Kesteren, S.Chelmi, J. Garcia Bernardo. Community detectio
       author={Elena Candellone and Erik-Jan van Kesteren and Sofia Chelmi and Javier Garcia-Bernardo},
       year={2024},
       eprint={2405.08203},
-      archivePrefix={arXiv}
+      archivePrefix={arXiv},
+      doi={https://doi.org/10.48550/arXiv.2405.08203}
 }
 ```
 
