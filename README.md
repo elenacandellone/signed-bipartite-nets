@@ -39,6 +39,16 @@ pip install -r requirements.txt
 ## How to cite
 E. Candellone, E. van Kesteren, S.Chelmi, J. Garcia Bernardo. Community detection in bipartite signed networks is highly dependent on parameter choice, 2024.
 
+```
+@misc{candellone2024community,
+      title={Community detection in bipartite signed networks is highly dependent on parameter choice}, 
+      author={Elena Candellone and Erik-Jan van Kesteren and Sofia Chelmi and Javier Garcia-Bernardo},
+      year={2024},
+      eprint={2405.08203},
+      archivePrefix={arXiv}
+}
+```
+
 
 ## Contact
 - Elena Candellone [e.candellone@uu.nl](mailto:e.candellone@uu.nl)
