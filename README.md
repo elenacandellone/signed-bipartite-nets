@@ -35,6 +35,8 @@ pip install -r requirements.txt
 ## Presentations
 - ODISSEI Conference 2023  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10060900.svg)](https://doi.org/10.5281/zenodo.10060900)
 - Young Complexity Researchers Utrecht [[link](https://www.uu.nl/en/events/young-complexity-researchers-lunch-ycrl-13-community-detection-on-signed-networks-untangling-co)]
+- NetSci 2024 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12191204.svg)](https://doi.org/10.5281/zenodo.12191204)
+
 
 ## How to cite
 E. Candellone, E. van Kesteren, S.Chelmi, J. Garcia Bernardo. Community detection in bipartite signed networks is highly dependent on parameter choice, 2024.
