@@ -5,6 +5,8 @@ Repository for the paper "Community detection in bipartite signed networks is hi
 Preprint (open-access): [https://arxiv.org/abs/2405.08203](https://arxiv.org/abs/2405.08203)
 
 Published version: https://doi.org/10.1142/S0219525925400028
+
+Open access to the published version: [read here](https://www.worldscientific.com/share/9STMJVSWHFSXTUT6XKGY?target=10.1142/S0219525925400028)
 ***
 
 ## Paper abstract
